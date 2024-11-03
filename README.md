@@ -53,7 +53,7 @@ Purpose: Train a Random Forest classifier on the same dataset and apply LIME, al
   * Instance-level explanations: Generate explanations for two sample instances using LIME, highlighting influential features in each case.
   * Instance Map: Feature importance values from the Random Forest model are mapped for specific instances to help identify which features influence the prediction for each individual instance.
  
-### Results
+## Results
 
 * **CatBoost + SHAP**:
   * SHAP Summary plots and bar plots illustrate which features are most influential in predicting UnderRisk.
@@ -64,7 +64,7 @@ Purpose: Train a Random Forest classifier on the same dataset and apply LIME, al
   * LIME plots for individual predictions highlight how specific features impact predictions for sample instances.
   * Instance-level importance maps provide a detailed view of the feature importance for each individual case, allowing a direct visual comparison of influential features in specific predictions.
 
-### References: 
+## References: 
 * [CatBoost Documentation](https://catboost.ai/)
 * [SHAP Documentation](https://shap.readthedocs.io/en/latest/)
 * [LIME Documentation](https://lime.readthedocs.io/en/latest/)
