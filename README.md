@@ -2,17 +2,20 @@
 
 This repository contains two scripts implementing explainable AI (XAI) techniques for a risk prediction model. The goal is to train machine learning classifiers on health-related data and interpret their predictions using SHAP and LIME explainability frameworks. This is especially useful in high-stakes domains, such as healthcare, where understanding model predictions is crucial for trust and accountability.
 
+
 ## Project Overview
 
 This project applies explainable AI techniques to a binary risk prediction model, trained on a health dataset with an imbalanced target variable (UnderRisk). Since many real-world datasets exhibit imbalance between classes, synthetic minority oversampling (SMOTE) is used to address this issue.
 
 **SMOTE (Synthetic Minority Over-sampling Technique)** helps balance the dataset by generating synthetic examples for the minority class, increasing the model’s ability to learn patterns from less-represented data without introducing bias. By oversampling the minority class, SMOTE improves the model’s predictive accuracy and generalization on imbalanced data. This enables both the CatBoost Classifier with SHAP and Random Forest Classifier with LIME models to perform effectively and fairly.
 
+
 ## Overview of the Models
 
 * **CatBoost Classifier with SHAP**: CatBoost is a gradient boosting algorithm optimized for categorical features. SHAP values help interpret model predictions by attributing each prediction to individual features, showing their positive or negative influence.
 * **Random Forest Classifier with LIME and Instance Map**: A Random Forest model is trained and explained with LIME (Local Interpretable Model-Agnostic Explanations) and a feature importance instance map. This highlights which features contribute most to each individual prediction, allowing for in-depth inspection at the instance level.
 Both models are trained on a health dataset to predict if an individual is under risk (UnderRisk), with a range of health-related features as input variables.
+
 
 ## Libraries Used
 * numpy
