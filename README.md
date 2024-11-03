@@ -7,7 +7,7 @@ This repository contains two scripts implementing explainable AI (XAI) technique
 
 This project applies explainable AI techniques to a binary risk prediction model, trained on a health dataset with an imbalanced target variable (UnderRisk). Since many real-world datasets exhibit imbalance between classes, synthetic minority oversampling (SMOTE) is used to address this issue.
 
-**SMOTE (Synthetic Minority Over-sampling Technique)** helps balance the dataset by generating synthetic examples for the minority class, increasing the model’s ability to learn patterns from less-represented data without introducing bias. By oversampling the minority class, SMOTE improves the model’s predictive accuracy and generalization on imbalanced data. This enables both the **CatBoost Classifier with SHAP* and **Random Forest Classifier with LIME* models to perform effectively and fairly.
+**SMOTE (Synthetic Minority Over-sampling Technique)** helps balance the dataset by generating synthetic examples for the minority class, increasing the model’s ability to learn patterns from less-represented data without introducing bias. By oversampling the minority class, SMOTE improves the model’s predictive accuracy and generalization on imbalanced data. This enables both the **CatBoost Classifier with SHAP** and **Random Forest Classifier with LIME** models to perform effectively and fairly.
 
 
 ## Overview of the Models
